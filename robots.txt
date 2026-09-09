@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://maruyume.github.io/sitemap.xml
