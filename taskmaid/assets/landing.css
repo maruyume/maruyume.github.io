@@ -1,0 +1,33 @@
+/* TaskMaid landing pages. Builds on /assets/site.css. */
+.lp-hero { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr); gap: 40px; align-items: center; padding: 40px 0 56px; }
+.lp-hero h1 { font-size: clamp(2rem, 4.4vw, 3.2rem); }
+.line { display: inline-block; }
+.lp-hero > * { min-width: 0; }
+.cards .card h2 { font-size: 1.15rem; }
+.lp-hero .lead { color: var(--muted); font-size: 1.08rem; max-width: 34rem; }
+.lp-hero-art { width: 100%; height: auto; border-radius: 28px; box-shadow: 0 24px 60px rgba(92, 52, 76, 0.16); }
+.lp-icon { width: 72px; height: 72px; border-radius: 17px; box-shadow: 0 8px 22px rgba(92, 52, 76, 0.14); }
+.store-badge { display: inline-block; line-height: 0; }
+.store-badge img { height: 54px; width: auto; }
+.lp-section { margin: 72px 0; }
+.lp-section > h2 { font-size: clamp(1.5rem, 4vw, 2.1rem); margin-bottom: 8px; }
+.lp-section > p.sub { color: var(--muted); margin-top: 0; }
+.shots { display: flex; gap: 16px; overflow-x: auto; padding: 8px 4px 20px; scroll-snap-type: x mandatory; }
+.shots img { flex: 0 0 auto; width: 215px; height: auto; border-radius: 28px; box-shadow: 0 14px 34px rgba(92, 52, 76, 0.16); scroll-snap-align: start; }
+.features { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; padding: 0; list-style: none; }
+.features li { background: var(--surface); border: 1px solid var(--border); border-radius: 20px; padding: 20px 22px; }
+.features strong { display: block; margin-bottom: 4px; }
+.features span { color: var(--muted); font-size: 0.95rem; }
+.maids { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 10px; align-items: end; text-align: center; }
+.maids figure { margin: 0; }
+.maids img { width: 100%; height: auto; max-height: 220px; object-fit: contain; }
+.maids figcaption { font-weight: 700; color: var(--accent-dark); font-size: 0.95rem; }
+.lp-cta { text-align: center; background: var(--surface); border: 1px solid var(--border); border-radius: 28px; padding: 40px 24px; }
+.lp-cta p { color: var(--muted); }
+@media (max-width: 720px) {
+  .lp-hero { grid-template-columns: minmax(0, 1fr); padding-top: 16px; }
+  .features { grid-template-columns: minmax(0, 1fr); }
+  .maids { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .shots { margin: 0 -20px; padding-left: 20px; padding-right: 20px; }
+  .shots img { width: 180px; }
+}
